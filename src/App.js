@@ -14,6 +14,33 @@ import MyButton from "./Ref";
 // import withAuth from "./withAuth";
 
 // const ProtectedDashboard = withAuth(Dashboard);
+const people = [
+  {
+    id: 0,
+    name: "Creola Katherine Johnson",
+    profession: "mathematician",
+  },
+  {
+    id: 1,
+    name: "Mario José Molina-Pasquel Henríquez",
+    profession: "chemist",
+  },
+  {
+    id: 2,
+    name: "Mohammad Abdus Salam",
+    profession: "physicist",
+  },
+  {
+    id: 3,
+    name: "Percy Lavon Julian",
+    profession: "chemist",
+  },
+  {
+    id: 4,
+    name: "Subrahmanyan Chandrasekhar",
+    profession: "astrophysicist",
+  },
+];
 
 function App() {
   return (
@@ -27,8 +54,10 @@ function App() {
       <UserDashboard status="guest" username="Shanurah" />
       <ProtectedDashboard isLoggedIn={false} username="Mawi"/> */}
       {/* <Lists /> */}
-      {/* <Filter/> */}
-      <MyButton/>
+      <Filter peopleList={people}>
+        <p>Hello</p>
+      </Filter>
+      {/* <MyButton/> */}
     </div>
   );
 }
