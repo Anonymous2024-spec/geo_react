@@ -1,0 +1,92 @@
+/* UserData.css */
+.container {
+  min-height: 100vh;
+  background: #f3f4f6;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.list {
+  width: 100%;
+  max-width: 64rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  list-style-type: none;
+}
+
+@media (min-width: 768px) {
+  .list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.card h2 {
+  color: #374151;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.card p {
+  color: #4b5563;
+  font-size: 0.875rem;
+}
+
+.email {
+  color: #1d4ed8;
+  word-break: break-all;
+}
+
+/* UserData.css */
+.container {
+    padding: 20px;
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+  .list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .userCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .userInfo {
+    flex-grow: 1;
+  }
+  
+  .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 20px;
+  }
+  
