@@ -1,12 +1,13 @@
 import React from "react";
-import ComponentC from "./ComponentC";
+import { useContext } from "react";
+import { CurrentUserContext } from "./ComponentA";
 
 export default function ComponentD() {
+  const user = useContext(CurrentUserContext);
   return (
-    <div>
-      <div className="box">
-              <h1>I am Component D </h1>
-      </div>
+    <div className="box">
+      <h1>I am Component D </h1>
+      {`Hi again ${user}`}
     </div>
   );
 }

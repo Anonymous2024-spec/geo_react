@@ -1,7 +1,7 @@
 import "./App.css";
-// import ComponentA from "./ComponentA";
+import ComponentA from "./ComponentA";
 // import Counter from "./CounterWithEffect";
-import UserData from "./UserData";
+// import UserData from "./UserData";
 
 // const people = [
 //   {
@@ -35,8 +35,8 @@ function App() {
   return (
     <div>
       {/* <Counter /> */}
-      <UserData />
-      {/* <ComponentA/> */}
+      {/* <UserData /> */}
+      <ComponentA/>
     </div>
   );
 }
